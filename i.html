@@ -1,0 +1,47 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
+export default function JdmCarsWebsite() {
+  return (
+    <div className="min-h-screen bg-gray-900 text-white p-6">
+      <header className="text-center mb-10">
+        <h1 className="text-5xl font-bold text-red-500 mb-3">JDM Legends</h1>
+        <p className="text-lg text-gray-300">Explore the iconic world of Japanese Domestic Market cars — built for performance, style, and culture.</p>
+      </header>
+
+      <section className="grid md:grid-cols-3 gap-8">
+        <Card className="bg-gray-800">
+          <CardContent className="p-4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Nissan_Skyline_GT-R_R34_V-Spec_II.jpg" alt="Nissan Skyline GT-R R34" className="rounded-lg mb-4" />
+            <h2 className="text-2xl font-semibold text-red-400 mb-2">Nissan Skyline GT-R R34</h2>
+            <p className="text-gray-300">Known as “Godzilla,” the R34 is one of the most legendary JDM cars ever made — a perfect blend of power, precision, and heritage.</p>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-gray-800">
+          <CardContent className="p-4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Toyota_Supra_MK4.jpg" alt="Toyota Supra MK4" className="rounded-lg mb-4" />
+            <h2 className="text-2xl font-semibold text-red-400 mb-2">Toyota Supra MK4</h2>
+            <p className="text-gray-300">The 2JZ engine made the MK4 Supra a tuning icon worldwide — immortalized in car culture and film.</p>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-gray-800">
+          <CardContent className="p-4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Mazda_RX-7_FD3S.jpg" alt="Mazda RX-7 FD" className="rounded-lg mb-4" />
+            <h2 className="text-2xl font-semibold text-red-400 mb-2">Mazda RX-7 FD</h2>
+            <p className="text-gray-300">Lightweight and rotary-powered, the RX-7 FD became a legend for its balance, design, and unmistakable driving feel.</p>
+          </CardContent>
+        </Card>
+      </section>
+
+      <div className="text-center mt-12">
+        <Button className="bg-red-500 hover:bg-red-600 text-white text-lg px-6 py-3 rounded-full">Learn More</Button>
+      </div>
+
+      <footer className="text-center mt-16 text-gray-500 text-sm">
+        © 2025 JDM Legends. Built with passion for car enthusiasts.
+      </footer>
+    </div>
+  );
+}
